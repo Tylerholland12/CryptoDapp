@@ -1,6 +1,15 @@
 <p align="center">
-    <img alt="jedi" src="Documents/code/bew2.4/cryptoDapp/src/logo.png"> 
+CryptoDapp
+<br>
+<br>
+A decentralized platform that is able to buy and sell ethereum between users
 </p>
+<p align="center">
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
+<br>
 
 ![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/DApp.png?raw=true)
 
