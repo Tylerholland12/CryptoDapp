@@ -1,5 +1,5 @@
 <p align="center">
-![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/src/logo.png?raw=true)
+    <img alt="jedi" src="Documents/code/bew2.4/cryptoDapp/src/logo.png"> 
 </p>
 
 ![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/DApp.png?raw=true)
