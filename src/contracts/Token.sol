@@ -1,8 +1,10 @@
 pragma solidity ^0.5.0;
 
+// set up erc20
 contract Token {
     string  public name = "DApp Token";
     string  public symbol = "DAPP";
+    // value below is in wei
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
 
@@ -12,12 +14,14 @@ contract Token {
         uint256 _value
     );
 
+    // 
     event Approval(
         address indexed _owner,
         address indexed _spender,
         uint256 _value
     );
 
+    // balance tells you how much you have
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
@@ -25,6 +29,7 @@ contract Token {
         balanceOf[msg.sender] = totalSupply;
     }
 
+    // sends tokens from one person to another
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
         balanceOf[msg.sender] -= _value;
@@ -33,6 +38,7 @@ contract Token {
         return true;
     }
 
+    // lets someone else use tokens
     function approve(address _spender, uint256 _value) public returns (bool success) {
         allowance[msg.sender][_spender] = _value;
         emit Approval(msg.sender, _spender, _value);

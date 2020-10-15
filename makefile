@@ -1,10 +1,8 @@
 run:
 	npm run start
 
-compile:
-	truffle compile
-	truffle migrate
-	truffle test
+reset:
+	truffle migrate --reset
 
 build:
 	npm run build
