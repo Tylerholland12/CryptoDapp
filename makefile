@@ -9,4 +9,7 @@ build:
 
 configure:
 	npm install --save-dev @babel/register
+
+try:
+	truffle test
 	
