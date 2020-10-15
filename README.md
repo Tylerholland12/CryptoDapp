@@ -35,6 +35,8 @@ To run this project follow the command in `makefile`
 - To test:
 `make try`
 
+## Contributors
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/tylerholland12"><img src="https://avatars1.githubusercontent.com/u/29693747?s=460&v=4" width="75px;" alt="Tyler Holland"/><br /><sub><b>Tyler Holland</b></sub></a><br/></td>
