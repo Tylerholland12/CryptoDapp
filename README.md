@@ -1,4 +1,4 @@
-![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/logo.png?raw=true)
+![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/src/logo.png?raw=true)
 
 ![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/DApp.png?raw=true)
 
