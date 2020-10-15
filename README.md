@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="jedi" src="Desktop/logo.png"> 
+    <img src="Desktop/logo.png"> 
 </p>
 
 ![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/DApp.png?raw=true)
