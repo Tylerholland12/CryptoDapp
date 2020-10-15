@@ -26,7 +26,7 @@ A decentralized platform that is able to buy and sell ethereum between users
 1. Name your repository something of your choosing. 
 1. Follow the GitHub instuctions to properly sync your project with GitHub
 
-### 1️⃣ Run & Test
+## 1️⃣ Run & Test
 To run this project follow the command in `makefile`
 
 - To run:
