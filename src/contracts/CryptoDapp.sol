@@ -32,4 +32,14 @@ contract CryptoDapp {
     //   emit an event
     emit TokenPurchased(msg.sender, address(token), tokenAmount, rate);
   }
+
+  function sellTokens(uint _amount) public {
+      require(token.balanceOf(msg.sender) >= _amount);
+    //   calc amount of ether to redeem
+      uint etherAmount = _amount / rate;
+
+      token.transferFrom(msg.sender, address(this), _amount);
+      msg.sender.transfer(etherAmount);
+
+  }
 }
