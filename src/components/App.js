@@ -4,7 +4,6 @@ import Token from '../abis/Token.json'
 import CryptoDapp from '../abis/CryptoDapp.json'
 import Navbar from './Navbar'
 import Main from './Main'
-// import logo from '../logo.png';
 import './App.css';
 
 class App extends Component {
@@ -19,11 +18,9 @@ class App extends Component {
 
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
-    // console.log(this.state.account)
 
     const ethbalance = await web3.eth.getBalance(this.state.account)
     this.setState({ ethbalance })
-    // console.log(this.state.ethBalance)
 
     // Load Token
     const networkId =  await web3.eth.net.getId()
@@ -32,7 +29,7 @@ class App extends Component {
       const token = new web3.eth.Contract(Token.abi, tokenData.address)
       this.setState({ token })
       let tokenBalance = await token.methods.balanceOf(this.state.account).call()
-      this.setState({ tokenBalance: tokenBalance.toString() })
+      this.setState(tokenBalance);
     } else {
       window.alert('Token contract not deployed to detected network.')
     }
@@ -47,6 +44,10 @@ class App extends Component {
      }
 
      this.setState({ loading: false })
+  }
+
+  newMethod(tokenBalance) {
+    this.setState({ tokenBalance: tokenBalance.toString() });
   }
 
   async loadWeb3() {
@@ -65,6 +66,15 @@ class App extends Component {
     this.setState({ loading: true })
     this.state.cryptoDapp.methods.purchaseTokens().send({ value: etherAmount, from: this.state.account }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
+    })
+  }
+
+  sellTokens = (tokenAmount) => {
+    this.setState({ loading: true })
+    this.state.token.methods.approve(this.state.cryptoDapp.address, tokenAmount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.state.cryptoDapp.methods.sellTokens(tokenAmount).send({ from: this.state.account }).on('transactionHash', (hash) => {
+        this.setState({ loading: false })
+      })
     })
   }
 
@@ -89,6 +99,7 @@ class App extends Component {
         ethBalance={this.state.ethBalance}
         tokenBalance={this.state.tokenBalance}
         purchaseTokens={this.purchaseTokens}
+        sellTokens={this.sellTokens}
       />
     }
     return (
@@ -102,18 +113,10 @@ class App extends Component {
                   href="/"
                   rel="noopener noreferrer"
                 >
-                  {/* <img src={logo} className="App-logo" alt="logo" /> */}
                 </a>
+                
                 { content }
-                <p>
-                  {/* Edit <code>src/components/App.js</code> and save to reload. */}
-                </p>
-                <a
-                  className="App-link"
-                  href="/"
-                  rel="noopener noreferrer"
-                >
-                </a>
+               
               </div>
             </main>
           </div>
