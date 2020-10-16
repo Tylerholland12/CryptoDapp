@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CryptoDapp/static/css/main.d850c1a7.chunk.css",
+    "main.js": "/CryptoDapp/static/js/main.2e2af5b0.chunk.js",
+    "main.js.map": "/CryptoDapp/static/js/main.2e2af5b0.chunk.js.map",
+    "runtime-main.js": "/CryptoDapp/static/js/runtime-main.4cae6ea6.js",
+    "runtime-main.js.map": "/CryptoDapp/static/js/runtime-main.4cae6ea6.js.map",
+    "static/css/2.c4608a58.chunk.css": "/CryptoDapp/static/css/2.c4608a58.chunk.css",
+    "static/js/2.984f890b.chunk.js": "/CryptoDapp/static/js/2.984f890b.chunk.js",
+    "static/js/2.984f890b.chunk.js.map": "/CryptoDapp/static/js/2.984f890b.chunk.js.map",
+    "index.html": "/CryptoDapp/index.html",
+    "precache-manifest.c74a6d93aae05c326ec40e9dbf207369.js": "/CryptoDapp/precache-manifest.c74a6d93aae05c326ec40e9dbf207369.js",
+    "service-worker.js": "/CryptoDapp/service-worker.js",
+    "static/css/2.c4608a58.chunk.css.map": "/CryptoDapp/static/css/2.c4608a58.chunk.css.map",
+    "static/css/main.d850c1a7.chunk.css.map": "/CryptoDapp/static/css/main.d850c1a7.chunk.css.map",
+    "static/js/2.984f890b.chunk.js.LICENSE.txt": "/CryptoDapp/static/js/2.984f890b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cae6ea6.js",
+    "static/css/2.c4608a58.chunk.css",
+    "static/js/2.984f890b.chunk.js",
+    "static/css/main.d850c1a7.chunk.css",
+    "static/js/main.2e2af5b0.chunk.js"
+  ]
+}
