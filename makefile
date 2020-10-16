@@ -8,6 +8,7 @@ build:
 	npm run build
 
 configure:
+	npm install
 	npm install --save-dev @babel/register
 
 try:

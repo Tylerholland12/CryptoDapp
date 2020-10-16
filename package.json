@@ -22,11 +22,14 @@
     "truffle": "^5.1.48",
     "web3": "1.0.0-beta.55"
   },
+  "homepage": "http://Tylerholland12.github.io/CryptoDapp",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +41,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/register": "^7.11.5"
+    "@babel/register": "^7.11.5",
+    "gh-pages": "^3.1.0"
   }
 }
