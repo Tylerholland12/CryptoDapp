@@ -2,7 +2,7 @@
 CryptoDapp
 <br>
 <br>
-A decentralized platform that is able to buy and sell ethereum between users
+A decentralized platform that is able to buy and sell ethereum between users. It is intended to have a single platform that a user can come to rather than multiple to manage their personal cryptocurrency. There are already multiple websites that let a user purhcase and trade cryptocurrency, but with this it is intended to be user-to-user where at least one of the users has some amount of cryptocurrency and can give to another person.
 </p>
 <p align="center">
   <a href="#" target="_blank">
@@ -18,7 +18,10 @@ A decentralized platform that is able to buy and sell ethereum between users
 - NPM
 - Truffle
 - Web3
+- MetaMask
 
+## 🎥 Live Website
+[CryptoDapp](https://tswivel.com/CryptoDapp/)
 
 ## 🏁 Installation
 
