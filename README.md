@@ -14,11 +14,11 @@ A decentralized platform that is able to buy and sell ethereum between users. It
 ![alt text](https://github.com/Tylerholland12/CryptoDapp/blob/main/DApp.png?raw=true)
 
 ## Requirements 
-- Node
-- NPM
-- Truffle
-- Web3
-- MetaMask
+- [Node](https://nodejs.org/en/), [MacOS](https://formulae.brew.sh/formula/node)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/installation)
+- [Web3](https://www.npmjs.com/package/web3)
+- [MetaMask](https://metamask.io/)
 
 ## 🎥 Live Website
 [CryptoDapp](https://tswivel.com/CryptoDapp/)
